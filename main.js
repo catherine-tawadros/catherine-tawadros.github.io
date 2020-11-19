@@ -7,7 +7,13 @@ function Person(u, p, t)
 
 function loginAttempt()
 {
-      var people = [new Person("1","1","student"), new person("2","2","teacher")];
+      function Person(u, p, t)
+      {
+            this.username=u;
+            this.password=p;
+            this.type=t;
+      }
+      var people = [new Person("1","1","student"), new Person("2","2","teacher")];
       var username = document.getElementById("username").value;
       var password =  document.getElementById("password").value;
       for (i=0; i<people.length; i++)
