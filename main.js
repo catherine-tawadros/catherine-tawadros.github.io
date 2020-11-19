@@ -7,3 +7,10 @@ function loginAttempt()
       else
             {location.assign('error.html');}
 }
+
+var student_person = {
+      username: "1",
+      password: "1"}
+var teacher_person = {
+      username: "2",
+      password: "2'}
