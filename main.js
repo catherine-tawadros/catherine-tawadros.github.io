@@ -2,7 +2,7 @@ function loginAttempt()
 {
       var username = document.getElementById("username").value;
       var password =  document.getElementById("password").value;
-      if (username==student.username && password==student.password)
+      if (username.equals(student.username) && password.equals(student.password))
             {location.assign('home.html');}
       else
             {location.assign('error.html');}
