@@ -13,10 +13,10 @@ function loginAttempt()
             this.password = p;
             this.what = t;
       }
-      var people = [new Person("1","1","student"), new Person("2","2","teacher")];
+      var people = [new Person(1,1,"student"), new Person(2,2,"teacher")];
       var username = document.getElementById("username").value;
       var password =  document.getElementById("password").value;
-      for (i=0; i<people.length; i++)
+      for (var i=0; i<people.length; i++)
       {
             if (username==people[i].username && password==people[i].password)
             {
