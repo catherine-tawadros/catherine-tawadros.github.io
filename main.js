@@ -28,5 +28,4 @@ function loginAttempt()
              }
       }
       location.assign("error.html");
-                                         
 }                                                                 
