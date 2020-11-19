@@ -17,7 +17,9 @@ function loginAttempt()
                   if (people[i].type=="student") 
                         {location.assign("studenthome.html");}
                   if (people[i].type=="teacher") 
-                        {location.assign("teacherhome.html);}
+                        {location.assign("teacherhome.html");}
              }
+            else
+                  {location.assign("error.html");}
                                          
 }                                                                 
