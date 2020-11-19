@@ -6,4 +6,4 @@ function loginAttempt()
             {location.assign('home.html');}
       else
             {location.assign('error.html');}
-      }
+}
