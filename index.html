@@ -24,10 +24,10 @@
   <script>
     function loginAttempt()
     {
-      var username = 7;
+      var username = document.getElementByID("username").value;
       var password =  document.getElementByID("password").value;
-      if (username==7)
-        {window.alert();}
+      if (username.equals(password))
+        {location.assign('home.html');}
       else
         {location.assign('error.html');}
     }
