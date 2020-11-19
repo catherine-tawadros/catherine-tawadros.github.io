@@ -8,9 +8,10 @@ function loginAttempt()
             {location.assign('error.html');}
 }
 
-var student_person = {
-      username: "1",
-      password: "1"}
-var teacher_person = {
-      username: "2",
-      password: "2'}
+var people;
+function Person(u, p)
+{
+      this.username=u;
+      this.password=p;
+      people.push(this)
+}
