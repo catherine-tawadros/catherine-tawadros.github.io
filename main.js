@@ -1,11 +1,9 @@
-
 function loginAttempt()
 {
-      //var username = document.getElementByID("username");
-      //var password =  document.getElementByID("password").value;
-      //if (username.equals(password))
-            //{location.assign('home.html');}
-      //else
-            //{location.assign('error.html');}
-      window.alert();
-}
+      var username = document.getElementById("username").value;
+      var password =  document.getElementById("password").value;
+      if (username==1 && password==1)
+            {location.assign('home.html');}
+      else
+            {location.assign('error.html');}
+      }
