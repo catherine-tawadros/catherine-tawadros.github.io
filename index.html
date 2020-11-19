@@ -23,13 +23,12 @@
   <script>
       function loginAttempt()
       {
-       var username = document.getElementById("username");
+       var username = document.getElementById("username").value;
        var password =  document.getElementById("password").value;
-        if (username.equals(password))
-         {location.assign('home.html');}
-       else
-          {location.assign('error.html');}
-       window.alert();
+       if (username.equals(password))
+         {window.alert();}
+//       else
+//          {location.assign('error.html');}
       }
   </script>
   <button type = "button" onclick="loginAttempt()">enter</button>
