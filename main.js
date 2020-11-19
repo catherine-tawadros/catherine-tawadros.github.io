@@ -8,10 +8,10 @@ function loginAttempt()
             {location.assign('error.html');}
 }
 
-var people;
-function Person(u, p)
-{
-      this.username=u;
-      this.password=p;
-      people.push(this)
-}
+//var people;
+//function Person(u, p)
+//{
+//      this.username=u;
+//      this.password=p;
+//      people.push(this)
+//}
