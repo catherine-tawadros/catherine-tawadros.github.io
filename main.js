@@ -24,9 +24,9 @@ function loginAttempt()
                         {location.assign("studenthome.html");}
                   if (people[i].what == "teacher") 
                         {location.assign("teacherhome.html");}
+                  return;
              }
-            else
-                  {location.assign("error.html");}
       }
+      location.assign("error.html");
                                          
 }                                                                 
