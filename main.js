@@ -7,12 +7,6 @@ function Person(u, p, t)
 
 function loginAttempt()
 {
-      function Person(u, p, t)
-      {
-            this.username = u;
-            this.password = p;
-            this.what = t;
-      }
       var people = [new Person("1","1","student"), new Person("2","2","teacher")];
       var username = document.getElementById("username").value;
       var password =  document.getElementById("password").value;
