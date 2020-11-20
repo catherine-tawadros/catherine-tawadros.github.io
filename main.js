@@ -26,4 +26,4 @@ function loginAttempt()
 }
 
 function goToCAP()
-      {location.assgin("createAccount.html");}
+      {location.assign("createAccount.html");}
