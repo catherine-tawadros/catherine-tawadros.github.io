@@ -11,8 +11,8 @@ function Person()
       location.assign("index.html");
 }
 
-people += new Person("A","m","1","1","student");
-people += new Person("f","d","2","2","teacher");
+people += new Person("A","m","s","s","student");
+people += new Person("f","d","t","t","teacher");
 
 function loginAttempt()
 {
