@@ -24,3 +24,6 @@ function loginAttempt()
       }
       location.assign("error.html");
 }
+
+function goToCAP()
+      {location.assgin("createAccount.html");}
