@@ -1,16 +1,17 @@
 var people;
 
-function Person(f, l, u, p, t)
+function Person()
 {
-      this.firstName = f;
-      this.lastName = l;
-      this.username = u;
-      this.password = p;
-      this.what = t;
+      this.firstName = document.getElementById("firstName").value;
+      this.lastName = document.getElementById("lastName").value;
+      this.username = document.getElementById("username").value;
+      this.password = document.getElementById("password").value;
+      this.what = "student";
       people = people + this;
 }
 
-people = [new Person("A", "m", "1","1","student"), new Person("f", "d","2","2","teacher")];
+people += new Person("A","m","1","1","student");
+people += new Person("f","d","2","2","teacher");
 
 function loginAttempt()
 {
