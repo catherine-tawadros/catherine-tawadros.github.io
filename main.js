@@ -1,10 +1,3 @@
-function Person(u, p, t)
-{
-      this.username = u;
-      this.password = p;
-      this.what = t;
-}
-
 function loginAttempt()
 {
       function Person(u, p, t)
