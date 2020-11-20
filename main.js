@@ -7,7 +7,7 @@ function Person()
       this.username = document.getElementById("username").value;
       this.password = document.getElementById("password").value;
       this.what = "student";
-      people = people + this;
+      people.push(this)
       location.assign("index.html");
 }
 
