@@ -8,6 +8,7 @@ function Person()
       this.password = document.getElementById("password").value;
       this.what = "student";
       people = people + this;
+      location.assign("index.html");
 }
 
 people += new Person("A","m","1","1","student");
