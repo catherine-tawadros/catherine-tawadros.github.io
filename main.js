@@ -1,11 +1,16 @@
-function Person(u, p, t)
+var people;
+
+function Person(f, l, u, p, t)
 {
+      this.firstName = f;
+      this.lastName = l;
       this.username = u;
       this.password = p;
       this.what = t;
+      people = people + this;
 }
 
-var people = [new Person("1","1","student"), new Person("2","2","teacher")];
+people = [new Person("A", "m", "1","1","student"), new Person("f", "d","2","2","teacher")];
 
 function loginAttempt()
 {
@@ -24,6 +29,3 @@ function loginAttempt()
       }
       location.assign("error.html");
 }
-
-function goToCAP()
-      {location.assign("createAccount.html");}
