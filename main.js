@@ -15,6 +15,7 @@ function createAccount()
       window.alert();
       user = new Person(document.getElementById("newFirstName").value,document.getElementById("newLastName").value,
              document.getElementById("newUsername").value,document.getElementById("newPassword").value);
+      window.alert("h");
       people.push(user);
       location.assign("index.html");
 }
@@ -30,8 +31,9 @@ function loginAttempt()
       var password =  document.getElementById("password").value;
       for (var i=0; i<people.length; i++)
       {
-            if (username.equals(people[i].username) && password.equals(people[i].password))
+            if (username == people[i].username && password == people[i].password)
             {
+                  window.alert();
                   if (people[i].what == "student") 
                         {location.assign("studenthome.html");}
                   if (people[i].what == "teacher") 
