@@ -21,12 +21,10 @@ function createAccount()
 }
 
 
-people += new Person("A","m","s","s");
-people += new Person("f","d","t","t");
-
-
 function loginAttempt()
 {
+      people += new Person("A","m","s","s");
+      people += new Person("f","d","t","t");
       var username = document.getElementById("username").value;
       var password =  document.getElementById("password").value;
       window.alert("checkpoint 1");
