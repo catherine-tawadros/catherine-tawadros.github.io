@@ -2,12 +2,13 @@ var people = [];
 
 function Person(a,b,c,d)
 {
+      window.alert();
       this.firstName = a;
       this.lastName = b;
       this.username = c;
       this.password = d;
       this.what = "student";
-      //people.push(this)
+      people.push(this)
       location.assign("index.html");
 }
 
