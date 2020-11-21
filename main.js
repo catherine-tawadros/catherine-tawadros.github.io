@@ -31,7 +31,6 @@ function loginAttempt()
 {
       var username = document.getElementById("username").value;
       var password =  document.getElementById("password").value;
-      window.alert("fuck you");
       for (var i=0; i<people.length; i++)
       {
             if (username == people[i].username && password == people[i].password)
@@ -42,6 +41,7 @@ function loginAttempt()
                         {location.assign("teacherhome.html");}
                   return;
              }
+            window.alert("fuck you");
       }
       location.assign("error.html");
 }
