@@ -1,15 +1,15 @@
 var people;
 
-function Person(a,b,c,d)
-{
-      this.firstName = a;
-      this.lastName = b;
-      this.username = c;
-      this.password = d;
-      this.what = "student";
-      //people.push(this)
-      location.assign("index.html");
-}
+//function Person(a,b,c,d)
+//{
+//      this.firstName = a;
+//      this.lastName = b;
+//      this.username = c;
+//      this.password = d;
+//      this.what = "student";
+//      //people.push(this)
+//      location.assign("index.html");
+//}
 
 function Person()
 {
@@ -22,7 +22,7 @@ function Person()
       location.assign("index.html");
 }
 
-people=new Person("A","m","s","s");
+//people=new Person("A","m","s","s");
 //people += new Person("f","d","t","t");
 
 function loginAttempt()
