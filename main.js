@@ -13,7 +13,6 @@ function Person(a,b,c,d)
 
 function Person()
 {
-      window.alert();
       this.firstName = document.getElementById("newFirstName").value;
       this.lastName = document.getElementById("newLastName").value;
       this.username = document.getElementById("newUsername").value;
