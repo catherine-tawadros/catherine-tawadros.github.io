@@ -23,6 +23,7 @@ function createAccount()
 
 function loginAttempt()
 {
+      var people = [];
       people.push(new Person("A","m","s","s"), new Person("f","d","t","t"));
       var username = document.getElementById("username").value;
       var password =  document.getElementById("password").value;
