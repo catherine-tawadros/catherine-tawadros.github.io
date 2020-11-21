@@ -1,4 +1,4 @@
-var people;
+var people = [];
 
 /*
 function Person(a,b,c,d)
