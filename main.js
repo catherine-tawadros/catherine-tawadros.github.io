@@ -1,6 +1,5 @@
 var people = [];
 
-/*
 function Person(a,b,c,d)
 {
       this.firstName = a;
@@ -25,7 +24,7 @@ function Person()
 
 people=new Person("A","m","s","s");
 people += new Person("f","d","t","t");
-*/
+
 
 function loginAttempt()
 {
@@ -42,6 +41,5 @@ function loginAttempt()
                   return;
              }
       }
-      window.alert("fuck youuuuu");
       location.assign("error.html");
 }
