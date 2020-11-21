@@ -1,5 +1,16 @@
 var people;
 
+function Person(a,b,c,d)
+{
+      this.firstName = a;
+      this.lastName = b;
+      this.username = c;
+      this.password = d;
+      this.what = "student";
+      people.push(this)
+      location.assign("index.html");
+}
+
 function Person()
 {
       this.firstName = document.getElementById("newFirstName").value;
