@@ -29,7 +29,7 @@ people += new Person("f","d","t","t");
 
 function loginAttempt()
 {
-      alert();
+      window.alert();
       var username = document.getElementById("username").value;
       var password =  document.getElementById("password").value;
       for (var i=0; i<people.length; i++)
