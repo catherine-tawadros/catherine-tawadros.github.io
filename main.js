@@ -19,7 +19,7 @@ function createAccount()
 }
 
 
-people = new Person("A","m","s","s");
+people += new Person("A","m","s","s");
 people += new Person("f","d","t","t");
 
 
