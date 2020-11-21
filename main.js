@@ -10,6 +10,7 @@ function Person(a,b,c,d)
       people.push(this)
 }
 
+/*
 function Person()
 {
       this.firstName = document.getElementById("newFirstName").value;
@@ -20,6 +21,7 @@ function Person()
       people.push(this);
       location.assign("index.html");
 }
+*/
 
 people = new Person("A","m","s","s");
 people += new Person("f","d","t","t");
