@@ -19,7 +19,7 @@ function Person()
       this.username = document.getElementById("newUsername").value;
       this.password = document.getElementById("newPassword").value;
       this.what = "student";
-      people.push(this)
+      people.push(this);
       location.assign("index.html");
 }
 
@@ -29,6 +29,7 @@ people += new Person("f","d","t","t");
 
 function loginAttempt()
 {
+      alert();
       var username = document.getElementById("username").value;
       var password =  document.getElementById("password").value;
       for (var i=0; i<people.length; i++)
