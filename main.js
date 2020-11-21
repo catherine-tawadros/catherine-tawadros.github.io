@@ -41,7 +41,7 @@ function loginAttempt()
                         {location.assign("teacherhome.html");}
                   return;
              }
-            window.alert("fuck youuuuu");
       }
+      window.alert("fuck youuuuu");
       location.assign("error.html");
 }
