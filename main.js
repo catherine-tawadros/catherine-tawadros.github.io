@@ -2,10 +2,10 @@ var people;
 
 function Person()
 {
-      this.firstName = document.getElementById("firstName").value;
-      this.lastName = document.getElementById("lastName").value;
-      this.username = document.getElementById("username").value;
-      this.password = document.getElementById("password").value;
+      this.firstName = document.getElementById("newFirstName").value;
+      this.lastName = document.getElementById("newLastName").value;
+      this.username = document.getElementById("newUsername").value;
+      this.password = document.getElementById("newPassword").value;
       this.what = "student";
       people.push(this)
       location.assign("index.html");
