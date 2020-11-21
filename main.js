@@ -7,21 +7,17 @@ function Person(a,b,c,d)
       this.username = c;
       this.password = d;
       this.what = "student";
-      people.push(this)
 }
 
-/*
-function Person()
+
+function createAccount()
 {
-      this.firstName = document.getElementById("newFirstName").value;
-      this.lastName = document.getElementById("newLastName").value;
-      this.username = document.getElementById("newUsername").value;
-      this.password = document.getElementById("newPassword").value;
-      this.what = "student";
-      people.push(this);
+      user = new Person(document.getElementById("newFirstName").value,document.getElementById("newLastName").value,
+             document.getElementById("newUsername").value,document.getElementById("newPassword").value);
+      people.push(user);
       location.assign("index.html");
 }
-*/
+
 
 people = new Person("A","m","s","s");
 people += new Person("f","d","t","t");
