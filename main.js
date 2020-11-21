@@ -2,7 +2,6 @@ var people = [];
 
 function Person(a,b,c,d)
 {
-      window.alert();
       this.firstName = a;
       this.lastName = b;
       this.username = c;
@@ -14,6 +13,7 @@ function Person(a,b,c,d)
 
 function Person()
 {
+      window.alert();
       this.firstName = document.getElementById("newFirstName").value;
       this.lastName = document.getElementById("newLastName").value;
       this.username = document.getElementById("newUsername").value;
