@@ -22,7 +22,7 @@ function Person()
       location.assign("index.html");
 }
 
-people=new Person("A","m","s","s");
+people = new Person("A","m","s","s");
 people += new Person("f","d","t","t");
 
 
