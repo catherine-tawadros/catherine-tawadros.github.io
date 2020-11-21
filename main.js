@@ -1,13 +1,16 @@
 let people = [];
 //window.alert("is this a thing?");
 
-function Person(a,b,c,d)
+class Person
 {
-      this.firstName = a;
-      this.lastName = b;
-      this.username = c;
-      this.password = d;
-      this.what = "student";
+      constructor(a,b,c,d)
+      {
+            this.firstName = a;
+            this.lastName = b;
+            this.username = c;
+            this.password = d;
+            this.what = "student";
+      }
 }
 
 
