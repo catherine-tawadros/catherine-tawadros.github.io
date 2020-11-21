@@ -29,11 +29,12 @@ function loginAttempt()
 {
       var username = document.getElementById("username").value;
       var password =  document.getElementById("password").value;
+      window.alert("checkpoint 1");
       for (var i=0; i<people.length; i++)
       {
             if (username == people[i].username && password == people[i].password)
             {
-                  window.alert();
+                  window.alert("checkpoint 2");
                   if (people[i].what == "student") 
                         {location.assign("studenthome.html");}
                   if (people[i].what == "teacher") 
