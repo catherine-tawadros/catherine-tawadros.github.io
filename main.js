@@ -15,8 +15,8 @@ function createAccount()
       window.alert();
       user = new Person(document.getElementById("newFirstName").value,document.getElementById("newLastName").value,
              document.getElementById("newUsername").value,document.getElementById("newPassword").value);
-      window.alert("h");
       people.push(user);
+      window.alert("h");
       location.assign("index.html");
 }
 
