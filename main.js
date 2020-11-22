@@ -16,12 +16,21 @@ class Person
 
 function createAccount()
 {
-      //window.alert("checkpoint a");
-      user = new Person(document.getElementById("newFirstName").value,document.getElementById("newLastName").value,
-             document.getElementById("newUsername").value,document.getElementById("newPassword").value);
-      people.push(user);
-      //window.alert("checkpoint b");
-      location.assign("index.html");
+    //window.alert("checkpoint a");
+    for (let prsn of people)
+    {
+        if (prsn.username == document.getElementById("username").value)
+        { window.alert("this username is taken"); return; }
+        if (prsn.username == document.getElementById("password").value)
+        { window.alert("this password is taken"); return; }
+    }
+    if (document.getElementById("password").value.length < 5)
+        {window.alert("please enter a password that is at least 5 characters long"); return; }
+    user = new Person(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
+             document.getElementById("newUsername").value, document.getElementById("newPassword").value);
+    people.push(user);
+    //window.alert("checkpoint b");
+    location.assign("index.html");
 }
 
 
