@@ -16,7 +16,7 @@ class Person
 
 function createAccount()
 {
-    //window.alert("checkpoint a");
+    window.alert("checkpoint a");
     for (let prsn of people)
     {
         if (prsn.username == document.getElementById("username").value)
@@ -29,7 +29,7 @@ function createAccount()
     user = new Person(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
              document.getElementById("newUsername").value, document.getElementById("newPassword").value);
     people.push(user);
-    //window.alert("checkpoint b");
+    window.alert("checkpoint b");
     location.assign("index.html");
 }
 
