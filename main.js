@@ -5,6 +5,7 @@ class Person
 {
       constructor(a,b,c,d)
       {
+            window.alert("the constructor works");
             this.firstName = a;
             this.lastName = b;
             this.username = c;
@@ -26,10 +27,11 @@ function createAccount()
     }
     if (document.getElementById("password").value.length < 5)
         {window.alert("please enter a password that is at least 5 characters long"); return; }
+    window.alert("checkpoint b");
     user = new Person(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
              document.getElementById("newUsername").value, document.getElementById("newPassword").value);
     people.push(user);
-    window.alert("checkpoint b");
+    window.alert("checkpoint c");
     location.assign("index.html");
 }
 
