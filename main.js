@@ -18,7 +18,8 @@ class Person
 function createAccount()
 {
     window.alert("checkpoint a");
-    for (let prsn of people)
+    let prsn;
+    for (prsn of people)
     {
         if (prsn.username == document.getElementById("username").value)
         { window.alert("this username is taken"); return; }
