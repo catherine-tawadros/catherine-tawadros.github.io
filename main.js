@@ -27,6 +27,7 @@ function createAccount()
         {window.alert("please enter a password that is at least 5 characters long"); return; }
     let user = new User(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
              document.getElementById("newUsername").value, document.getElementById("newPassword").value, document.getElementById("type").value);
+    window.alert(this.what);
     users.push(user);
     location.assign("index.html");
 }
