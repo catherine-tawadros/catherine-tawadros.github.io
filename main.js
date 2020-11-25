@@ -16,7 +16,7 @@ class Person
 
 function createAccount()
 {
-    window.alert("in the function");
+    window.alert("in the thing");
     people.push(new Person("a","a","a","a"));
     window.alert("right before");
     for (let i=0; i<people.length; i++)
