@@ -11,11 +11,12 @@ class User
             this.what = e;
       }
 }
+/*
 class Student
 {
       constructor(a,b,c,d,e,f,g)
       {
-           User(a,b,c,d,e)
+           User.call(this,a,b,c,d,e)
            let teacher;
            let library = [];
       }
@@ -24,12 +25,12 @@ class Teacher
 {
       constructor(a,b,c,d,e,f,g)
       {
-            User(a,b,c,d,e)
+            User.call(this,a,b,c,d,e)
             let students = [];
             let library = [];
       }
 }
-
+*/
 
 function createAccount()
 {
