@@ -5,19 +5,25 @@
     <form>
     <div>
       <label> first name </label>
-      <input id = "newFirstName">
+      <input id="newFirstName" required>
     </div>
     <div>
       <label> last name </label>
-      <input id = "newLastName">
+      <input id="newLastName" required>
     </div>
     <div>
       <label> username </label>
-      <input id = "newUsername">
+      <input id="newUsername" required>
     </div>
     <div>
       <label> password </password>
-      <input id = "newPassword">
+      <input id="newPassword" required>
+    </div>
+    <div>
+      <input type="radio" id="student" name="type" value="student">
+      <label for="student">Student</label>
+      <input type="radio" id="teacher" name="type" value="teacher">
+      <label for="teacher">Teacher</label>
     </div>
   </form>
   
