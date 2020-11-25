@@ -26,6 +26,7 @@ function createAccount()
         if (prsn.username == document.getElementById("password").value)
         { window.alert("this password is taken"); return; }
     }
+    window.alert("check");
     if (document.getElementById("password").value.length < 5)
         {window.alert("please enter a password that is at least 5 characters long"); return; }
     window.alert("checkpoint b");
