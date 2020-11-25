@@ -17,7 +17,6 @@ class Person
 function createAccount()
 {
     window.alert("in the function");
-    var people;
     people.push(new Person("a","a","a","a"));
     for (let prsn of people)
     {
