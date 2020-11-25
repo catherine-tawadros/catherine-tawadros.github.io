@@ -19,7 +19,8 @@ function createAccount()
 {
     window.alert("checkpoint a");
     let people = [];
-    for (let prsn of people)
+    people.push(new Person("a","a","a","a");
+    for (let prsn in people)
     {
         if (prsn.username == document.getElementById("username").value)
         { window.alert("this username is taken"); return; }
