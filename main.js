@@ -23,14 +23,11 @@ function createAccount()
         if (people[i].password == document.getElementById("newPassword").value)
         { window.alert("this password is taken"); return; }
     }
-    window.alert("after for loop");
     if (document.getElementById("newPassword").value.length < 5)
         {window.alert("please enter a password that is at least 5 characters long"); return; }
-    window.alert("almost there");
     let user = new Person(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
              document.getElementById("newUsername").value, document.getElementById("newPassword").value);
     people.push(user);
-    window.alert("end");
     location.assign("index.html");
 }
 
