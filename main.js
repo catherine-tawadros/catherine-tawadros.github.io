@@ -18,12 +18,13 @@ function createAccount()
 {
     window.alert("in the function");
     people.push(new Person("a","a","a","a"));
+    window.alert("right before");
     for (let i=0; i<people.length; i++)
     {
         window.alert("in the for loop");
-        if (prsn.username == document.getElementById("username").value)
+        if (people[i].username == document.getElementById("username").value)
         { window.alert("this username is taken"); return; }
-        if (prsn.username == document.getElementById("password").value)
+        if (people[i].username == document.getElementById("password").value)
         { window.alert("this password is taken"); return; }
     }
     window.alert("after for loop");
