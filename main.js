@@ -4,7 +4,6 @@ class Person
 {
       constructor(a,b,c,d)
       {
-            window.alert("the constructor works");
             this.firstName = a;
             this.lastName = b;
             this.username = c;
@@ -16,9 +15,7 @@ class Person
 
 function createAccount()
 {
-    window.alert("in the thing");
     people.push(new Person("a","a","a","a"));
-    window.alert("right before");
     for (let i=0; i<people.length; i++)
     {
         window.alert("in the for loop");
