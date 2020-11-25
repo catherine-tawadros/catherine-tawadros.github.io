@@ -19,7 +19,7 @@ function createAccount()
     window.alert("in the function");
     var people;
     people.push(new Person("a","a","a","a"));
-    for (let prsn in people)
+    for (let prsn of people)
     {
         window.alert("in the for loop");
         if (prsn.username == document.getElementById("username").value)
