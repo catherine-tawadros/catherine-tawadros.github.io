@@ -19,9 +19,9 @@ function createAccount()
     for (let i=0; i<people.length; i++)
     {
         window.alert("in the for loop");
-        if (people[i].username == document.getElementById("username").value)
+        if (people[i].username == document.getElementById("newUsername").value)
         { window.alert("this username is taken"); return; }
-        if (people[i].username == document.getElementById("password").value)
+        if (people[i].username == document.getElementById("newPassword").value)
         { window.alert("this password is taken"); return; }
     }
     window.alert("after for loop");
