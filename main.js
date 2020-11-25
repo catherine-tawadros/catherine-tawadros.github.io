@@ -1,49 +1,49 @@
-let people = [];
+let users = [];
 
-class Person
+class User
 {
-      constructor(a,b,c,d)
+      constructor(a,b,c,d,e)
       {
             this.firstName = a;
             this.lastName = b;
             this.username = c;
             this.password = d;
-            this.what = "student";
+            this.what = e;
       }
 }
 
 
 function createAccount()
 {
-    people.push(new Person("a","a","a","a"));
-    for (let i=0; i<people.length; i++)
+    users.push(new User("a","a","a","a","student"));
+    for (let i=0; i<users.length; i++)
     {
-        if (people[i].username == document.getElementById("newUsername").value)
+        if (users[i].username == document.getElementById("newUsername").value)
         { window.alert("this username is taken"); return; }
-        if (people[i].password == document.getElementById("newPassword").value)
+        if (users[i].password == document.getElementById("newPassword").value)
         { window.alert("this password is taken"); return; }
     }
     if (document.getElementById("newPassword").value.length < 5)
         {window.alert("please enter a password that is at least 5 characters long"); return; }
-    let user = new Person(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
-             document.getElementById("newUsername").value, document.getElementById("newPassword").value);
-    people.push(user);
+    let user = new User(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
+             document.getElementById("newUsername").value, document.getElementById("newPassword").value, document.getElementById("type").value);
+    users.push(user);
     location.assign("index.html");
 }
 
 
 function loginAttempt()
 {
-      people.push(new Person("A","m","s","s"), new Person("f","d","t","t"));
+      users.push(new User("A","m","s","s","student"), new User("f","d","t","t","teacher"));
       let username = document.getElementById("username").value;
       let password =  document.getElementById("password").value;
-      for (let i=0; i<people.length; i++)
+      for (let i=0; i<users.length; i++)
       {
-            if (username == people[i].username && password == people[i].password)
+            if (username == users[i].username && password == users[i].password)
             {
-                  if (people[i].what == "student") 
+                  if (users[i].what == "student") 
                         {location.assign("studenthome.html");}
-                  if (people[i].what == "teacher") 
+                  if (users[i].what == "teacher") 
                         {location.assign("teacherhome.html");}
                   return;
              }
