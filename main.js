@@ -11,10 +11,10 @@ class User
             this.what = e;
       }
 }
-/*
+
 class Student
 {
-      constructor(a,b,c,d,e,f,g)
+      constructor(a,b,c,d,e)
       {
            User.call(this,a,b,c,d,e)
            let teacher;
@@ -23,14 +23,14 @@ class Student
 }
 class Teacher
 {
-      constructor(a,b,c,d,e,f,g)
+      constructor(a,b,c,d,e)
       {
             User.call(this,a,b,c,d,e)
             let students = [];
             let library = [];
       }
 }
-*/
+
 function getRadioValue(theRadioGroup)
 {
     var elements = document.getElementsByName(theRadioGroup);
@@ -56,9 +56,14 @@ function createAccount()
     }
     if (document.getElementById("newPassword").value.length < 5)
         {window.alert("please enter a password that is at least 5 characters long"); return; }
-    let user = new User(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
+    if (getRadioValue("type")=="student")
+        {let user = new Student(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
              document.getElementById("newUsername").value, document.getElementById("newPassword").value, 
-                        getRadioValue("type"));
+                        getRadioValue("type"));}
+    if (getRadioValue("type")=="teacher")
+        {let user = new Teacher(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
+             document.getElementById("newUsername").value, document.getElementById("newPassword").value, 
+                        getRadioValue("type"));}
     window.alert(user.what);
     users.push(user);
     location.assign("index.html");
