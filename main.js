@@ -45,7 +45,6 @@ function getRadioValue(theRadioGroup)
 
 function createAccount()
 {
-    window.alert("hey");
     users.push(new User("a","a","a","a","student"));
     for (let i=0; i<users.length; i++)
     {
