@@ -46,9 +46,9 @@ function createAccount()
         {window.alert("please enter a password that is at least 5 characters long"); return; }
     let user = new User(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
              document.getElementById("newUsername").value, document.getElementById("newPassword").value, 
-                        //document.getElementById("type").value
+                        document.getElementByName("type").value
                        );
-    //window.alert(user.what);
+    window.alert(user.what);
     users.push(user);
     location.assign("index.html");
 }
