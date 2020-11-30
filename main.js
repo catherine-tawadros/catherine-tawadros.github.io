@@ -31,6 +31,17 @@ class Teacher
       }
 }
 */
+function getRadioValue(theRadioGroup)
+{
+    var elements = document.getElementsByName(theRadioGroup);
+    for (var i = 0, l = elements.length; i < l; i++)
+    {
+        if (elements[i].checked)
+        {
+            return elements[i].value;
+        }
+    }
+}
 
 function createAccount()
 {
@@ -46,8 +57,7 @@ function createAccount()
         {window.alert("please enter a password that is at least 5 characters long"); return; }
     let user = new User(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
              document.getElementById("newUsername").value, document.getElementById("newPassword").value, 
-                        document.getElementByName("type").value
-                       );
+                        getRadioValue("type"));
     window.alert(user.what);
     users.push(user);
     location.assign("index.html");
