@@ -63,7 +63,7 @@ function createAccount()
     if (getRadioValue("type")=="teacher")
         {let user = new Teacher(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
              document.getElementById("newUsername").value, document.getElementById("newPassword").value, 
-                        getRadioValue("type"));}
+                        getRadioValue("type").value);}
     window.alert("checkpoint3");
     window.alert(user.what);
     users.push(user);
