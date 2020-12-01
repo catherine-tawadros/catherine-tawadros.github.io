@@ -53,7 +53,7 @@ function createAccount()
         if (users[i].password == document.getElementById("newPassword").value)
         { window.alert("this password is taken"); return; }
     }
-    window.alert(getRadioValue(type));
+    window.alert(getRadioValue("type"));
     if (document.getElementById("newPassword").value.length < 5)
         {window.alert("please enter a password that is at least 5 characters long"); return; }
     if (getRadioValue("type")=="student")
