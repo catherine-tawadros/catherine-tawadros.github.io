@@ -53,7 +53,6 @@ function createAccount()
         if (users[i].password == document.getElementById("newPassword").value)
         { window.alert("this password is taken"); return; }
     }
-    window.alert(getRadioValue("type"));
     if (document.getElementById("newPassword").value.length < 5)
         {window.alert("please enter a password that is at least 5 characters long"); return; }
     if (getRadioValue("type")=="student")
@@ -63,7 +62,7 @@ function createAccount()
     if (getRadioValue("type")=="teacher")
         {let user = new Teacher(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
              document.getElementById("newUsername").value, document.getElementById("newPassword").value, 
-                        getRadioValue("type").value);}
+                        getRadioValue("type"));}
     window.alert("checkpoint3");
     window.alert(user.what);
     users.push(user);
