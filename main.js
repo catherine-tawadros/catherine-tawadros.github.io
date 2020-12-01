@@ -57,7 +57,7 @@ function createAccount()
         {window.alert("please enter a password that is at least 5 characters long"); return; }
     window.alert("checkpoint1");
     if (getRadioValue("type")=="student")
-        {let user = new Student(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
+        {window.alert("checkpoint 1.5"); let user = new Student(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
              document.getElementById("newUsername").value, document.getElementById("newPassword").value, 
                         getRadioValue("type")); window.alert("checkpoint2");}
     if (getRadioValue("type")=="teacher")
