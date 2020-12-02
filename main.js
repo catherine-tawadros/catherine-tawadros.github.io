@@ -17,8 +17,8 @@ class Student
       constructor(a,b,c,d,e)
       {
            User.call(this,a,b,c,d,e)
-           let teacher;
-           let library = [];
+           this.teacher;
+           this.library = [];
       }
 }
 class Teacher
@@ -26,8 +26,8 @@ class Teacher
       constructor(a,b,c,d,e)
       {
             User.call(this,a,b,c,d,e)
-            let students = [];
-            let library = [];
+            this.students = [];
+            this.library = [];
       }
 }
 
@@ -46,7 +46,7 @@ function getRadioValue(theRadioGroup)
 function createAccount()
 {
     users.push(new Student("a","a","a","a","student"));
-    window.alert("it updated 2 electric boogaloo");
+    window.alert("it updated 3 electric boogalee");
     for (let i=0; i<users.length; i++)
     {
         if (users[i].username == document.getElementById("newUsername").value)
