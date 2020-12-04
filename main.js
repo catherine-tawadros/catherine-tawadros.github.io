@@ -1,8 +1,6 @@
 let users = [];
 
-class User
-{
-      constructor(a,b,c,d,e)
+function User(a,b,c,d,e)
       {
             this.firstName = a;
             this.lastName = b;
@@ -10,7 +8,7 @@ class User
             this.password = d;
             this.what = e;
       }
-}
+
 
 function Student(a,b,c,d,e)
       {
@@ -43,7 +41,7 @@ function getRadioValue(theRadioGroup)
 
 function createAccount()
 {
-    window.alert("it updated 5");
+    window.alert("it updated");
     users.push(new Student("a","a","a","a","student"));
     for (let i=0; i<users.length; i++)
     {
