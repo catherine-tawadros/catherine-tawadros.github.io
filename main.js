@@ -12,9 +12,7 @@ class User
       }
 }
 
-class Student
-{
-      constructor(a,b,c,d,e)
+function Student(a,b,c,d,e)
       {
            window.alert("a");
            User.call(this,a,b,c,d,e);
@@ -23,16 +21,13 @@ class Student
            window.alert("c");
            this.library = [];
       }
-}
-class Teacher
-{
-      constructor(a,b,c,d,e)
+
+function Teacher(a,b,c,d,e)
       {
             User.call(this,a,b,c,d,e);
             this.students = [];
             this.library = [];
       }
-}
 
 function getRadioValue(theRadioGroup)
 {
@@ -48,7 +43,7 @@ function getRadioValue(theRadioGroup)
 
 function createAccount()
 {
-    window.alert("it updated 4");
+    window.alert("it updated 5");
     users.push(new Student("a","a","a","a","student"));
     for (let i=0; i<users.length; i++)
     {
