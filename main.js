@@ -56,7 +56,9 @@ function createAccount()
         {let user = new Teacher(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
              document.getElementById("newUsername").value, document.getElementById("newPassword").value, 
                         getRadioValue("type"));}
+    window.alert("checkpoint1");
     users.push(user);
+    window.alert("checkpoint2");
     location.assign("index.html");
 }
 
