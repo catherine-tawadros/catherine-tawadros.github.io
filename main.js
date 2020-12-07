@@ -12,11 +12,8 @@ function User(a,b,c,d,e)
 
 function Student(a,b,c,d,e)
       {
-           window.alert("a");
            User.call(this,a,b,c,d,e);
-           window.alert("b");
            this.teacher;
-           window.alert("c");
            this.library = [];
       }
 
@@ -41,7 +38,6 @@ function getRadioValue(theRadioGroup)
 
 function createAccount()
 {
-    window.alert("it updated");
     users.push(new Student("a","a","a","a","student"));
     for (let i=0; i<users.length; i++)
     {
@@ -53,15 +49,13 @@ function createAccount()
     if (document.getElementById("newPassword").value.length < 5)
         {window.alert("please enter a password that is at least 5 characters long"); return; }
     if (getRadioValue("type")=="student")
-        {window.alert("checkpoint 1"); let user = new Student(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
+        {let user = new Student(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
              document.getElementById("newUsername").value, document.getElementById("newPassword").value, 
-                        getRadioValue("type")); window.alert("checkpoint2");}
+                        getRadioValue("type"));}
     if (getRadioValue("type")=="teacher")
         {let user = new Teacher(document.getElementById("newFirstName").value, document.getElementById("newLastName").value,
              document.getElementById("newUsername").value, document.getElementById("newPassword").value, 
                         getRadioValue("type"));}
-    window.alert("checkpoint3");
-    window.alert(user.what);
     users.push(user);
     location.assign("index.html");
 }
