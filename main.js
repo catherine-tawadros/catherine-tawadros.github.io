@@ -1,4 +1,4 @@
-let users = [new User("A","m","s","s","student"), new User("f","d","t","t","teacher")];
+let users = [new User("A","m","s","1","student"), new User("f","d","t","t","teacher")];
 
 function User(a,b,c,d,e)
       {
