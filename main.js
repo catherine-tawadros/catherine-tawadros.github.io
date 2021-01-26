@@ -82,11 +82,23 @@ function loginAttempt()
       location.assign("error.html");
 }
 
-function Video(m,s,st,t)
+function Time(m,s)
 {
-      this.minutes = m;
-      this.seconds = s;
+      this.minute = m;
+      this.second = s;
+}
+
+function Video(ti,st,t)
+{
+      this.time = ti;
       this.student = st;
       this.teacher = t;
       this.comments = [];
+}
+
+function Comment(ti,te,u)
+{
+      this.user = u;
+      this.time = ti;
+      this.text = te;
 }
