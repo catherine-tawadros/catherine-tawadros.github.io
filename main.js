@@ -1,4 +1,4 @@
-let users = [];
+let users = [new User("A","m","s","s","student"), new User("f","d","t","t","teacher")];
 
 function User(a,b,c,d,e)
       {
@@ -65,7 +65,7 @@ function createAccount()
 
 function loginAttempt()
 {
-      users.push(new User("A","m","s","s","student"), new User("f","d","t","t","teacher"));
+      //users.push(new User("A","m","s","s","student"), new User("f","d","t","t","teacher"));
       let username = document.getElementById("username").value;
       let password =  document.getElementById("password").value;
       for (let i=0; i<users.length; i++)
