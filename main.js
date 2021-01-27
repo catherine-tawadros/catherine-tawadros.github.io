@@ -95,9 +95,10 @@ function Video(ti,st,t)
       this.comments = [];
 }
 
-function Comment(ti,te,u)
+function Comment(sti,eti,te,u)
 {
       this.user = u;
-      this.time = ti;
+      this.start_time = sti;
+      this.end_time = eti;
       this.text = te;
 }
