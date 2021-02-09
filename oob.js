@@ -6,6 +6,7 @@ function oob()
     if (isVowel(word.substring(i,i+1)))
       new_word+="oob";
     else new_word+=word.substring(i,i+1);
+  console.log(new_word);
   return new_word;
 }
 
