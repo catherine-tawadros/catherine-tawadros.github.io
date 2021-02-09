@@ -2,7 +2,7 @@ function oob()
 {
   word = document.getElementById("word");
   let new_word = "";
-  for (let i=0; i<word.length(); i++)
+  for (let i=0; i<word.length; i++)
     if (isVowel(word.substring(i,i+1)))
       new_word+="oob";
     else new_word+=word.substring(i,i+1);
