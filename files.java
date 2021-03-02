@@ -35,7 +35,7 @@ public class FileThings{
     while (s1.hasNextLine())
     {
       String currentComment = s1.nextLine().split(",");
-      if (currentComment[0].equals(name))
+      if (currentComment[3].equals(name))
       {comments += new Comment(currentComment[0], currentComment[1], currentComment[2], currentComment[3], currentComment[4], currentComment[5])}
     }
     return comments;
@@ -43,6 +43,13 @@ public class FileThings{
   }
   public static void write(String st, String et, String c, String o, String fb, String vt) throws IOException
   {
-    
+      try {
+      FileWriter myWriter = new FileWriter("stuff.txt");
+      myWriter.write(st+","+et+","+c+","+o+","+fb+","vt);
+      myWriter.close();
+    } catch (IOException e) {
+      System.out.println("An error occurred.");
+    }
+
   }
 }
