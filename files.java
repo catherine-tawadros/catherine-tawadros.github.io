@@ -1,12 +1,14 @@
 import java.io;
 import java.util;
 
+
 public class Time{
   private int min;
   private int second;
   public Time(m, s) {minute=m; second=s;}
   public Time getTime() {return m+":"+s;}
 }
+
 
 public class Comment{
  private String starttime;
@@ -41,6 +43,7 @@ public class FileThings{
     return comments;
     s1.close();
   }
+  
   public static void write(String st, String et, String c, String o, String fb, String vt) throws IOException
   {
       try {
