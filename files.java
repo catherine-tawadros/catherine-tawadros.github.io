@@ -27,7 +27,7 @@ public class Comment{
 }
 
 public class FileThings{
-  public static ArrayList<Comment> getComments(String name)
+  public static ArrayList<Comment> getComments(String name) throws IOException
   {
     FileReader in1 = new FileReader("stuff.txt");
     Scanner s1 = new Scanner(in1);
@@ -38,9 +38,10 @@ public class FileThings{
       if (currentComment[0].equals(name))
       {comments += new Comment(currentComment[0], currentComment[1], currentComment[2], currentComment[3], currentComment[4], currentComment[5])}
     }
-    return comments;    
+    return comments;
+    s1.close();
   }
-  public static void write(Comment c)
+  public static void write(String st, String et, String c, String o, String fb, String vt) throws IOException
   {
     
   }
