@@ -49,7 +49,7 @@ public class FileThings{
   {
       try {
       FileWriter myWriter = new FileWriter("stuff.txt");
-      myWriter.write(st+","+et+","+c+","+o+","+fb+","vt);
+      myWriter.write(st+","+et+","+c+","+o+","+fb+","+vt);
       myWriter.close();
     } catch (IOException e) {
       System.out.println("An error occurred.");
