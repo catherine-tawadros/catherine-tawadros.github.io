@@ -9,13 +9,13 @@ public class Time{
 }
 
 public class Comment{
- private Time starttime;
- private Time endtime;
+ private String starttime;
+ private String endtime;
  private String commenter;
  private String feedback;
  private String owner;
  private String videotitle;
- public Comment(Time st, Time et, String c, String o, String fb, String vt)
+ public Comment(String st, String et, String c, String o, String fb, String vt)
  {
    starttime = st;
    endtime = et;
@@ -27,12 +27,21 @@ public class Comment{
 }
 
 public class FileThings{
-  public static String[] getThings()
+  public static ArrayList<Comment> getComments(String name)
   {
     FileReader in1 = new FileReader("stuff.txt");
     Scanner s1 = new Scanner(in1);
-    ArrayList<String> nouns = new ArrayList<String>();
-    String currentLine = s1.nextLine();
-
+    ArrayList<Comment> comments = new ArrayList<Comment>();
+    while (s1.hasNextLine())
+    {
+      String currentComment = s1.nextLine().split(",");
+      if (currentComment[0].equals(name))
+      {comments += new Comment(currentComment[0], currentComment[1], currentComment[2], currentComment[3], currentComment[4], currentComment[5])}
+    }
+    return comments;    
+  }
+  public static void write(Comment c)
+  {
+    
   }
 }
