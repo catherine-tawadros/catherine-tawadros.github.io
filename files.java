@@ -45,7 +45,7 @@ public class FileThings{
     s1.close();
   }
   
-  public static void write(String st, String et, String c, String o, String fb, String vt) throws IOException
+  public static void write(String st, String et, String c, String o, String fb, String vt)
   {
       try {
       FileWriter myWriter = new FileWriter("stuff.txt");
@@ -54,6 +54,5 @@ public class FileThings{
     } catch (IOException e) {
       System.out.println("An error occurred.");
     }
-
   }
 }
